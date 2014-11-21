@@ -1,0 +1,86 @@
+body{
+font-family: 'Rokkitt', serif;
+}
+
+a {
+  text-decoration: none;
+  color:#52CCA3;
+}
+
+a:hover {
+  color:#317A62;
+}
+
+hr{
+  width: 85%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#nav{
+  width: 85%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.nav-item{
+  position: relative;
+  display:inline-block;
+  background-color:#F2F2F2;
+  padding: 5px 20px 5px 20px;
+  margin: 15px 5px 0px 5px;
+  float:right;
+  font-size: 17px;
+}
+
+#nav p{
+  display:inline-block;
+  position: relative;
+  padding: 0px 20px 0px 20px;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+#nav img{
+  display:inline-block;
+  position: relative;
+  padding: 5px 20px 5px 20px;
+}
+
+#projects{
+  width:600px;
+  margin-right: auto;
+  margin-left:auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.projectblock1{
+  width: 150px;
+  height:150px;
+  margin:10px;
+  text-align: center;
+  background-color: #A3E0FF;
+  display: inline-block;
+  position: relative;
+}
+
+.projectblock2{
+  width: 150px;
+  height:150px;
+  margin:10px;
+  text-align: center;
+  background-color: #66FFE0;
+  display: inline-block;
+  position: relative;
+}
+
+.projectblock3{
+  width: 150px;
+  height:150px;
+  margin:10px;
+  text-align: center;
+  background-color: #52CCA3;
+  display: inline-block;
+  position: relative;
+}
