@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link type="text/css" rel="stylesheet" href="../blog/blog-stylesheet.css"/>
+    <title>Dan Morrison Blog</title>
+  <head>
+
+  <body>
+
+    <div id="navigation">
+
+      <p>Dan Morrison Blog</p>
+
+      <div class="item"><br>
+        <a href="#">Archive</a>
+        <ul>
+          <li><a href="c1-chefs-kitchen.html">9th Nov<br>CB </a></li><br>
+          <li><a href="t1-git-blog.html">9th Nov<br>TB</a></li>
+          <li><a href="t2-css-design.html">22nd Nov<br>TB</a></li>
+          <li><a href="t3-arrays-hashes.html">23rd Nov<br>TB</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <ul>
+          <li><a href="https://twitter.com/Dan_Morrison">Twitter</a></li>
+          <li><a href="https://github.com/danmorrisonNZ">Github</a></li>
+          <li><a href="http://danmorrisonnz.github.io/index.html">Website</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="content">
+
+      <h1>Phase 0 Week 4</h1>
+      <h3>Enumerable Methods</h3>
+      <p>30th November 2014</p>
+      <p>This weeks technical blog is on enumerable methods, and more specifically on the group_by method.<br>
+        The group_by method can be very handy for exactly what its name suggests, grouping things. In code form it looks like this.<br><br>
+        .group_by{ |a| block} - where a is the content being grouped and block is the argument it can be grouped by.
+        <br><br>
+        Typically it will take an array and spit out a hash of groups and is a very useful method when sorting elements in an array.<br><br>
+        For instance if I wanted to group an array of cities by first letter I could use<br><br>
+        cites = ['Whakatane', 'Auckland', 'Paeroa', 'Wellington', 'Paris']<br>
+          cities.group_by{ |a| a[0]}<br>
+          <strong>which would return</strong>
+          => {'W' = ['Whakatane', 'Wellington'], 'A' = ['Auckland'], 'P' = ['Paeroa', 'Paris']}<br><br>
+        You can also sort by length, division, multiplication, or whatever other things you can think up for your code block.<br><br>
+
+        Thats it form me for this week but thanks for reading!
+
+        Dan
+
+      </p>
+      </div>
+
+      <div id="about">
+      <img src ="imgs/profile4.png"/>
+      <div id="abouttext">
+      <p>I'm Dan a Designer and soon to be developer. Follow my journeys here.</p>
+      </div>
+      </div>
+
+
+
+
+
+
+  </body>
+
+</html>
