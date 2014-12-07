@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link type="text/css" rel="stylesheet" href="blog-stylesheet.css"/>
+    <title>Dan Morrison Blog</title>
+  <head>
+
+  <body>
+
+    <div id="navigation">
+
+      <p>Dan Morrison Blog</p>
+
+      <div class="item"><br>
+        <a href="#">Archive</a>
+        <ul>
+          <li><a href="c1-chefs-kitchen.html">9th Nov<br>CB </a></li><br>
+          <li><a href="t1-git-blog.html">9th Nov<br>TB</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <ul>
+          <li><a href="https://twitter.com/Dan_Morrison">Twitter</a></li>
+          <li><a href="https://github.com/danmorrisonNZ">Github</a></li>
+          <li><a href="http://danmorrisonnz.github.io/index.html">Website</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="content">
+      <h1>Phase 0 Week 5</h1>
+      <h3>Ruby Classes</h3>
+      <p>7 December2014</p>
+      <p>This week of phase 0 has been all about classes in Ruby.<br><br>
+        A quick run down of classes. <br>
+        While creating objects is all well and good with plenty of wriggle room to do some cool things, it only really works for individual items, that is to say, if you have more than one object with similar methods (for this post we'll use different types of beer), the process of creating each individual beer with a name, taste, and price is tedious. Classes help with this by creating a way to group these methods so and reduce the amount of work required.
+        <br><br>
+        Take this example:<br>
+        class Beers<br>
+          def initialize(taste,price,name)<br>
+            @taste = taste<br>
+            @price = price<br>
+            @name = name<br>
+          end<br><br>
+
+          def taste<br>
+            @taste<br>
+          end<br><br>
+
+          def price<br>
+            @price<br>
+          end<br><br>
+
+          def name<br>
+            @name<br>
+          end<br>
+        end<br><br>
+
+        tuatara = Beers.new("good","average","Tuatara")<br>
+        puts "#{tuatara.name} is a #{tuatara.taste} beer that costs an #{tuatara.price} amount."<br><br>
+
+        This will print: "Tuatara is a good beer that costs an average amount."<br><br>
+
+        In this example im able to assign three variables to each new beer, taste, price and name. I've used Tuatara as an example here but if I wanted to I could then create one for Founders, Macs or even Waikato! The main point is that by creating a single Class, I'm now able to create a set of new objects that all have the same behaviours(or methods). This example is fairly basic but gets the general point across, if you wanted to you could create more complex methods within the class to do things like determine the price of the beer based on market rates, or evaluate the taste based on ingredients.<br><br>
+
+        Now for the bits and pieces of it. Classes always start with a capital letter (like Beers did). After that we can define an initialize method which will run everytime you create a new instance of Beers. In this case we've set it to require three values but it could be something as simple as a string like "Beers are good, whats your favourite?" that would print everytime you created a new Beer.<br>
+        Next are the Instance Variables. Each one of these starts with an @ sign and is a way of saving values and reading them back. You'll notice that we defined a method for each one to run its value afterwards, but what you need to know is that the three values that we are asked for in the Initialize method are then saved to they can be repeated.  The methods after them are instance methods which can be used for anything. Here we've used them to state the name of out instance variables from earlier, but as I mentioned earlier you could use them for many of the same things that you would a regular method.<br><br>
+        Thats the basics of classes but there are much more to them, and if your interested I would recommend looking into the attribute method family which can make creating your instance variables much easier.<br><br>
+
+        Thats all I've got time for this week but thanks for reading!<br><br>
+
+        Dan
+
+
+
+      </p>
+      </div>
+
+      <div id="about">
+      <img src ="imgs/profile4.png"/>
+      <div id="abouttext">
+      <p>I'm Dan a Designer and soon to be developer. Follow my journeys here.</p>
+      </div>
+      </div>
+
+
+
+
+
+
+  </body>
+
+</html>
