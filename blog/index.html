@@ -34,6 +34,39 @@
 
     <div id="content">
 
+       <h1>Phase 0 Week 6</h1>
+      <h3>Variable Scope in Ruby</h3>
+      <p>14 December 2014</p>
+      <p>This weeks technical blog is on Variable Scope in Ruby, the different types of variables and how they should be used.<br><br>
+        First lets talk about scope. Scope defines where in a programme a variable is accessable. For this post we'll use the comparison of rooms in the Pentagon, where different types of people (or variables) have different security clearance levels (or scope)! Wacky, I know. To add an extra layer some people (variables) have a great fashion sense and are able to change what they look like more often than others. <br>
+        Now lets list the different types of variables and what they look like, and I'll give you a run down on how they relate to our Pentagon comparison:<br><br>
+        Global variable - which have a $ at the beggining of their names like this: $global_variable<br>
+        Instance variable - which have an @ at the beggining of their names like this: @instance_variable<br>
+        Local Variable - which start with either a lowercase letter or an underscore like this: instance_variable<br>
+        Class Variable - which start with two @ symbols before their names like this: @@class_variable<br>
+        Constant - which are defined by capital letters like this: CONSTANT<br><br>
+
+        If you need to find out what sort of a variable an object is and you can see any of these markers you can use defined? to find out and print it to the terminal.<br><br>
+
+        Now lets look at the different levels of clearance (or Scope) starting with the little guys and working our way up to the top dog.<br><br>
+
+        First up is the Local Variable. Local variables are confined to where ever they have been defined. In Ruby this means that if your define a local variable named "Suzy" within a method named "office 1", then "Suzy" will only be allowed to move within "Office 1". She can't move outside to another method named "Office 2" because she is only able to move within her LOCAL scope. In terms of our Pentagon comparison Suzy works on front desk, meaning her swipe card will only allow her to access the lobby where her desk is located and nowhere else. Unfortunately for Suzy she has the least access to the entire building with her swipe card only getting her into a single room! While she's at work shes confined to that room and cant even get into a break room to eat her lunch, which is pretty rude in my opinion. Suzy does have great fashion sense though which means she can change her appearance (or value) whenever she likes.<br><br>
+
+        Next up the ladder is the Instance Variable. Instance Variables can be accessed across everything in their respective classes but not outside of them. They can also change the values of their objects and only affect those specific objects. This means that if your Instance Variable "Ken" is defined in a class "Defence_Office" then "Ken" is able to be accessed across all methods loops etc in "Defence_Office". In our Pentagon this almost explains itself. Ken works in the Defence Department which may comprise of many smaller rooms including weapons development, drone monitoring, and the strategy room. Kens swipe card allows him to move between any room he would like but only within the Defence department, and unfortunately for Ken his clearance dosent extend to the front desk area so he's not able to talk to Suzy. While Suzy changes her whole outfit in one go however, Ken tends to change his bit by bit. He can change his socks one day and his shirt the next, so his ability to change is a bit more nuanced.<br><br>
+
+        Next theres the Class Variable. Class Variables are very simmilar to Instance Variables except that when changed they are changed across all instances of that class. This means that if you change a value, say the "Shoes" your class variable named "Steve" all instances of Steve will also change the value of "Shoes". In our Pentagon the Steves are a crack team of Defence department guys. They have the same sort of clearance as Ken does but nobody really knows who they are indiviually because they all look and dress the same. New Steves come and go but their strange team culture means that if one of their ties is purple this week then all of their ties are purple.<br><br>
+
+        Constants are the next up the ladder. They can be assigned values within a module or class making them simmilar to instance or class variables but should not be changed once defined (though the possibility exists their name pretty much states their intention.) They also shouldnt be defined within methods. In our Pentagon the Constant is an old fella named George. Hes been there longer than anyone can remember and rumor has it that he's had the same pair of shoes since he began his job there in 1943. He has some simmilar access to Ken and the Steves but is a grumpy old bugger who doesnt like being how to do his job (he wont be DEFINED by anyone else.)<br><br>
+
+        Lastly we have the top dog, the Global Variable. Global variables are accessable from anywhere in a programme meaning that your global variable "Condalezza" can travel anywhere in your programme "Pentagon". Global Variables are generally recommended against for this reason as if they are involved in bugs or errors they can be hard to track down. In our Pentagon Condalezza has swipe access to the entire building. It is possible for her to change her clothes but due to her super important position she trys not to. Theres also only one of her position in the whole building as having any more than one can fast start to cause problems.<br><br>
+
+        Dodgey Architecture and Strange characters aside, the Pentagon model give you a general idea of variable scope in Ruby and what each variable can and cant do. Thats all I've got time for this week but thanks for reading!<br><br>
+
+        Dan
+
+
+      </p>
+
       <h1>Phase 0 Week 5</h1>
       <h3>Sharing is caring</h3>
       <p>7 December 2014</p>
