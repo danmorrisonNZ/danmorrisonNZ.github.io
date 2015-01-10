@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link type="text/css" rel="stylesheet" href="blog-stylesheet.css"/>
+    <title>Dan Morrison Blog</title>
+  <head>
+
+  <body>
+
+    <div id="navigation">
+
+      <p>Dan Morrison Blog</p>
+
+      <div class="item"><br>
+        <a href="#">Archive</a>
+        <ul>
+          <li><a href="c1-chefs-kitchen.html">9th Nov<br>CB </a></li><br>
+          <li><a href="t1-git-blog.html">9th Nov<br>TB</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <ul>
+          <li><a href="https://twitter.com/Dan_Morrison">Twitter</a></li>
+          <li><a href="https://github.com/danmorrisonNZ">Github</a></li>
+          <li><a href="http://danmorrisonnz.github.io/index.html">Website</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="content">
+      <h1>Phase 0 Week 8</h1>
+      <h3>SQL Injection</h3>
+      <p>10th January 2015</p>
+      <p>This weeks technical blog is on SQL Injection, which is essentially a form of database hacking. To preface, SQL is a language which allows interaction with databases online, it's used all over the web in things like request forms, and login boxes. Code injection is a technique which is used to attack these data driven sites and applications in order to alter or steal data. SQL injection works by inserting malicious SQL statements into these sites and applications.<br><br>
+      In a legitimate use of something like a login box on many of the websites you might come across on the web you would enter your details into the name and password fields which would cause that website or web app to talk to its database in order to determine whether or not your details are correct. But in an illegitimate use, an attacker can submit a specific line of code in order to run commands that weren't intended by the designers. This in turn gives them access to far more data than the average person, some of it being potentially sensitive. <br><br>
+      This is all possible due to the nature of websites and web apps. As a member of the public you need access to inputs that allow you to interact with a website, such as with login boxes, and these websites and apps need to be able to communicate with their databases for informational purposes. Therefore anyone with a browser, a good knowledge of the SQL language, and a bit of creativity can execute malicious attacks on vulnerable websites. Usually a website/app will query its database based on a set of pre programmed commands e.g matching your input of a USERNAME and PASSWORD with pairs of USERNAMES and PASSWORDS in its database. But if the input fields are poorly guarded or "santized" then an attacker has the possibility of adding his or her own commands. One such execution of this is entering a valid username and then in the password field entering 'password' OR 'x' = 'x'. Since the computer is looking for return value of true when quering passwords and 'x' does indeed equal 'x' this should allow the attacker to gain access to this account.<br><br>
+      The implications of this mean that not only can attackers gain access to the information within the sites database, changing it and taking it for their own personal use, they can also use a DROP command to destroy entire tables worth of information.<br><br>
+
+      Thats the general idea of SQL injection, I've come to the end of my time this week but I'll list my sources below for futher reading if you're at all interested.<br><br>
+
+      Dan<br><br>
+
+      <a href "http://technet.microsoft.com/en-us/library/ms161953(v=sql.105).aspx">http://technet.microsoft.com/en-us/library/ms161953(v=sql.105).aspx</a><br>
+      <a href "http://www.acunetix.com/websitesecurity/sql-injection/">http://www.acunetix.com/websitesecurity/sql-injection/</a><br>
+      <a href "http://sqlzoo.net/hack/">http://sqlzoo.net/hack/</a><br>
+      <a href "http://www.w3schools.com/sql/sql_injection.asp">http://www.w3schools.com/sql/sql_injection.asp</a><br>
+
+
+
+      </p>
+      </div>
+
+      <div id="about">
+      <img src ="../blog/imgs/profile4.png"/>
+      <div id="abouttext">
+      <p>I'm Dan a Designer and soon to be developer. Follow my journeys here.</p>
+      </div>
+      </div>
+
+
+
+
+
+
+  </body>
+
+</html>
