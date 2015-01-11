@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=unicode" http-equiv="Content-Type" />
+<link type="text/css" rel="stylesheet" href="cheat_style.css" />
+<title>CSS Cheat Sheet</title>
+</head>
+
+<body>
+
+<div id = "description">
+  <h1>CSS Positioning</h1>
+  <p>The CSS positioning properties allow you to position an element. It can also place an element behind another, and specify what should happen when an element's content is too big.<br /><br />
+
+  Elements can be positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the positioning method.<br /><br />
+
+  There are four different positioning methods.</p>
+</div>
+
+<div id = "bodytext">
+
+  <h3>Static</h3>
+  <p>Static is the default for every element. This tells the browser to place it in the logical location in the browser window according to its 'display' and 'float' properties and its order in the html. Note that the 'top', 'left', 'bottom' and 'right' properties are ignored if the position is 'static'.</p>
+  <img src = "imgs/static.png" alt = "image description"/>
+
+  <h3>Relative</h3>
+  <p>Think of 'relative' is very similar to 'static'. The browser places the element in the default location in the document. But after doing so (and affecting the locations of the surrounding elements) it then moves the element by the amount in the 'top', 'left', 'bottom' and 'right' properties. It is important to note that the space reserved for it in the flow of the document is kept (and looks like a hole the size of the element). In addition, there is not a space reserved for its new location - and so can appear above or below other elements. Appearing above static elements is the default, and there is a property called the 'z-order' which can be used to get it below other elements - but that's a different blog post!<br /><br />
+
+  Relative elements also serve as a reference point to absolute elements that are its children. Speaking of which...</p>
+  <img src = "imgs/relative.png" alt = "image description"/>
+
+  <h3>Absolute</h3>
+  <p>When an element is positioned as 'absolute' it is removed from the normal flow of the document. It doesn't take up any space and all the other 'static' and 'relative' elements can be placed where it would otherwise have been.<br /><br />
+
+  Instead, it is positioned in reference to its first parent element that is not positioned as 'static'; and to <html> if all its parents are static. It then consults the 'top', 'left', 'bottom' and 'right' properties to place the element at the specified place from that parent.<br /><br />
+
+  For example, to place an element at the bottom of an empty page you can set it to 'position: absolute' and 'bottom: 0'. (Note: this is an example and not the best way to do this. This way the footer element will overlap some body content at the bottom of the page. See Ryan Fait's Sticky Footer for a better way.)<br /><br />
+
+  Arguably, the real power of absolute positioning is in its powerful combos. A common one is to create two divs, one inside the other, making the outer div 'position: relative' and the inner div 'position: absolute' and 'top: 0', 'right': 0'. This will enable the inner div to always be positioned at the top right corner of the outer div while at the same time the outer div is free to grow and shrink to fit its contents. This is perfect for something like an exit button!</p>
+  <img src = "imgs/absolute.png" alt = "image description"/>
+
+  <h3>Fixed</h3>
+  <p>The fourth and last position an element can have is 'fixed'. Like 'absolute', 'fixed' removes the element from the normal flow of the document. It then repositions it relative to the browser window. For example, if an element was positioned 'top: 0' and 'right: 0' then it would always remain in the top right of the browser, regardless of where the user scrolls on the page. Care must be taken that this element does not cover up other information intended for the user. The 'z-order' is also important to consider here.<br /><br />
+
+  It seems like a lot of care needs to be taken to use fixed positioning, but it can produce quite a striking effect when used correctly.</p>
+  <img src = "imgs/fixed.png" alt = "image description"/>
+
+  <h3>Inherit and Initial</h3>
+  <p>Two more options are valid when setting the position, but they are not positions in themselves. 'inherit' tells the browser to set the position to the same as the parent element. 'initial' sets the position to the default - but this is always 'static' so 'initial' is probably better left unused in favour of 'static'.</p>
+
+</div>
+
+</body>
+
+</html>

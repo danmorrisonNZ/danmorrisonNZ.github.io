@@ -1,0 +1,15 @@
+#description {
+    width: 18%;
+    position: fixed;
+    margin: 0 10px;
+}
+
+#bodytext {
+    width: 80%;
+    position: relative;
+    float: right;
+}
+
+body {
+    font-family: sans-serif;
+}
