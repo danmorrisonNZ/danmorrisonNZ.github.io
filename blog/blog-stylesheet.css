@@ -13,7 +13,7 @@ h3{
 
 a {
   text-decoration: none;
-  color:#52CCA3;
+  color:#40B549;
 }
 
 a:hover {
@@ -27,27 +27,32 @@ a:hover {
   position: fixed;
   margin-top: 40px;
   margin-left: 40px;
-
-}
-
-.item {
-  background-color:#F2F2F2;
-  padding: 5px;
-  margin-top:10px;
   text-align: center;
 }
 
-.item ul li{
-  list-style: none;
+#logo{
+  margin-left:0px;
+}
+.item {
+  background-color:#F2F2F2;
+
+  padding: 0px;
+  margin-top:10px;
   text-align: left;
-}
-
-.item ul li a{
   list-style: none;
-  color: #52CCA3;
 }
 
-.item ul li a:hover{
+
+
+.item li a{
+  list-style: none;
+  color: #40B549;
+  padding-left:15px;
+
+
+}
+
+.item li a:hover{
   color: #317A62;
 }
 
@@ -67,7 +72,7 @@ a:hover {
 
 #about{
   height:auto;
-  position:fixed;
+  position:absolute;
   margin-top:70px;
   display: inline-block;
 }
@@ -77,8 +82,13 @@ a:hover {
   font-size: 12px;
   background-color:#F2F2F2;
   padding:15px;
+  margin-top: 5px;
 }
 
 #about img{
   width:180px;
+}
+
+.icon{
+  width:20%;
 }
