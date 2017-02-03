@@ -1,7 +1,6 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('sickmanu').then(function(cache) {
-      console.log("opened cache")
       return cache.addAll([
       '/index.html',
       '/styles/style.css',
@@ -9,6 +8,7 @@ self.addEventListener('install', function(e) {
       '/scripts/jquery-3.1.1.min.js',
       '/HOO_.mp4'
       ]);
+      .then(() => self.skipWaiting());
     })
   );
 });
