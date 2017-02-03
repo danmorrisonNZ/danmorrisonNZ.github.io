@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do a sick manu</title>
+  <link rel='manifest' href='manifest.json'>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+  <script src="scripts/jquery-3.1.1.min.js"></script>
+  <script src="scripts/manu.js"></script>
 
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="mainstyle.css"/>
-    <title>Dan Morrison Website</title>
-  </head>
+  <!-- TODO add manifest here -->
 
-  <body>
+</head>
 
-    <div id="nav">
+<body>
+  <div id="top-bar">
+    <h1> do it</h1>
+    <button id="massive-manu"class="default-button-style">CHEEAA HOO</button>
+    <input type="text" id="name" placeholder="whats your sick manu name?"></input>
+    <h1 id="manu-alert"></h1>
+  </div>
+  <img src="images/chea_hooey.png" id="sick-manu"></img>
+  <div id="ocean"></div>
+  <script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('scripts/sw.js', { scope: 'scripts/' })
+          .then(function(registration) {
+                console.log('Service Worker Registered');
+          });
 
-      <p>Dan Morrison</p>
-      <div class="nav-item"><a href="contact.html">Contact</a></div>
-      <div class="nav-item"><a href="about.html">About</a></div>
-      <div class="nav-item"><a href="blog/index.html">Blog</a></div>
-      <div class="nav-item"><a href="index.html">Projects</a></div>
-
-    </div>
-
-
-    <div id="projects">
-
-      <div class="projectblock1"><p>Design Project</p></div>
-      <div class="projectblock2"><p>Design and code Project</p></div>
-      <div class="projectblock3"><p>Code Project</p></div>
-      <div class="projectblock1"><p>Design Project</p></div>
-      <div class="projectblock2"><p>Design and code Project</p></div>
-      <div class="projectblock3"><p>Code Project</p></div>
-      <div class="projectblock1"><p>Design Project</p></div>
-      <div class="projectblock2"><p>Design and code Project</p></div>
-      <div class="projectblock3"><p>Code Project</p></div>
-
-    </div>
-
-    <hr>
-
-  </body>
+        navigator.serviceWorker.ready.then(function(registration) {
+           console.log('Service Worker Ready');
+        });
+      }
+  </script>
+</body>
 
 </html>
