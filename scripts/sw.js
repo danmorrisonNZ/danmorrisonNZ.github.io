@@ -7,7 +7,7 @@ self.addEventListener('install', function(e) {
       '/scripts/manu.js',
       '/scripts/jquery-3.1.1.min.js',
       '/HOO_.mp4'
-      ]);
+      ])
       .then(() => self.skipWaiting());
     })
   );
