@@ -1,3 +1,3 @@
 [submodule "sickManus"]
 	path = sickManus
-	url = git@github.com:danmorrisonNZ/sickManus.git
+	url = https://github.com/danmorrisonNZ/sickManus.git
