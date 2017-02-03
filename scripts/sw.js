@@ -1,6 +1,7 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('sickmanu').then(function(cache) {
+      console.log("opened cache")
       return cache.addAll([
       '/index.html',
       '/styles/style.css',
