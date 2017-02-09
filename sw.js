@@ -9,7 +9,12 @@ self.addEventListener('install', function(e) {
       '/scripts/jquery-3.1.1.min.js',
       '/images/chea_hooey.png',
       '/HOO_.mp4',
-      "images/touch"
+      "images/touch/manufy_128.png",
+      "images/touch/manufy_144.png",
+      "images/touch/manufy_152.png",
+      "images/touch/manufy_192.png",
+      "images/touch/manufy_256.png",
+      "images/touch/manufy_512.png"
       ]);
     })
   );
