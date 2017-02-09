@@ -2,13 +2,15 @@ self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open('sickmanu').then(function(cache) {
       return cache.addAll([
-      '/index.html',
+      '/',
+      "sw.js",
       '/styles/style.css',
       '/scripts/manu.js',
       '/scripts/jquery-3.1.1.min.js',
-      '/HOO_.mp4'
-      ])
-      .then(() => self.skipWaiting());
+      '/images/chea_hooey.png',
+      '/HOO_.mp4',
+      "images/touch"
+      ]);
     })
   );
 });

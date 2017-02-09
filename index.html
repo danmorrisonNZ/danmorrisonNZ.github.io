@@ -4,8 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f83ff">
   <title>Do a sick manu</title>
-  <link rel='manifest' href='manifest.json'>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel='manifest' href='/manifest.json'>
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
   <script src="scripts/jquery-3.1.1.min.js"></script>
@@ -17,16 +20,16 @@
 
 <body>
   <div id="top-bar">
-    <h1> do it</h1>
+    <h1>Bro, do a sick manu!</h1>
     <button id="massive-manu"class="default-button-style">CHEEAA HOO</button>
-    <input type="text" id="name" placeholder="whats your sick manu name?"></input>
+    <input type="text" id="name" placeholder="what's your sick manu name?"></input>
     <h1 id="manu-alert"></h1>
   </div>
   <img src="images/chea_hooey.png" id="sick-manu"></img>
   <div id="ocean"></div>
   <script>
     if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('scripts/sw.js', { scope: 'scripts/' })
+        navigator.serviceWorker.register('sw.js', { scope: '/' })
           .then(function(registration) {
                 console.log('Service Worker Registered');
           });

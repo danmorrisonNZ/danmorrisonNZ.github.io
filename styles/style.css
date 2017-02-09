@@ -1,7 +1,7 @@
 body{
   height:auto;
   margin:0;
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Bungee Shade', sans-serif;
   width:100%;
 }
 
@@ -72,6 +72,7 @@ button{
   outline: none;
   border: 2px solid grey;
   border-radius: 3px;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
