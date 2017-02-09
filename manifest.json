@@ -28,7 +28,7 @@
         "type": "image/png",
         "sizes": "512x512"
       }],
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#84FFF9",
